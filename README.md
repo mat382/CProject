@@ -10,10 +10,12 @@ You can test your functions with basic algebra computations before starting the 
 
 ## Compute A and B matrices and get the Q and R matrices from the paper.
 
-To obtain the A and B matrices you will need physical parameters for the system of interest. Later we will try to imoplement out controller in the PX4 Frirmware and will simulate the x500 quadcopter drone. Its mass is $m=2.0$ and is inertia is given by: $\begin{bmatrix}0.02166666666666667, 0.0, 0.0 \\
-0.0, 0.02166666666666667, 0.0 \\
-0.0, 0.0, 0.04000000000000001\end{bmatrix}$
-
+To obtain the A and B matrices you will need physical parameters for the system of interest. Later we will try to imoplement out controller in the PX4 Frirmware and will simulate the x500 quadcopter drone. Its mass is $m=2.0$ and is inertia is given by:
+```math
+I = \begin{bmatrix}0.02166666666666667 & 0.0 & 0.0 \\
+0.0 & 0.02166666666666667 & 0.0 \\
+0.0 & 0.0 & 0.04000000000000001\end{bmatrix}
+```
 ## Solver
 Now that you have implemented you helper functions, you will have to define your system and implement the algorithm provided in the project's description sheet in section 3.2.
 You can implement your function in lqr_solver.c
